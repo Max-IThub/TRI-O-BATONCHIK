@@ -1,0 +1,144 @@
+body{
+    background-color: bisque;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-areas: "header sidebar sidebar" "screen screen screen" "main main main" "footer footer footer";
+}
+
+.grid-2-col {
+    padding: 1rem;   
+    border: 1px solid white;
+}
+
+.grid-2-header {
+    grid-area: header;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: 1000;
+    border-radius: 50px;
+    background-color: blueviolet;
+    
+}
+.grid-2-header:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.grid-2-sidebar {
+    grid-area: sidebar;
+    display: flex;
+}
+
+.page1, .page2, .page3, .page4, .page5, .page6{
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 25px;
+
+
+}
+
+.page1{
+    background-color: gray;
+}
+.page1:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.page2{
+    background-color: gray;
+}
+.page2:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.page3{
+    background-color: gray;
+}
+.page3:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.page4{
+    background-color: gray;
+}
+.page4:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.page5{
+    background-color: gray;
+}
+.page5:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.page6{
+    background-color: gray;
+}
+.page6:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.grid-2-screen{
+    display: flex;
+    grid-area: screen;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/winXP.png);
+}
+.screen{
+    display: block;
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    background-image: url(/winXP.png);
+    text-align: center;
+    justify-content:space-around;
+    border-radius: 50px;
+}
+.screen:hover{
+background-color: aqua;
+transition: 0.5s;
+}
+
+.screen__container{
+    margin:100px auto 600px;
+}
+
+.grid-2-main {
+    display: flex;
+    grid-area: main;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.elemMain1, .elemMain2, .elemMain3, .elemMain4, .elemMain5, .elemMain6, .elemMain7, .elemMain8, .elemMain9{
+    display: block;
+    justify-content: space-between;
+    
+    margin-right: 5px;
+    width: 800px;
+    height: 100px;
+    background-image: url(TRI-O.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.grid-2-footer {
+    font-size: larger;
+    font-weight: 1000 bold;
+    grid-area: footer;
+}
+
+.grid-2-footer:hover {
+    color: cornflowerblue;
+    transition: 0.5s;
+}
